@@ -13,7 +13,7 @@ This policy explains what data the Clash of Clans Discord bot (the "Bot") stores
 The Bot only stores what its features need to run.
 
 - **Discord identifiers:** server (guild) IDs, channel IDs, role IDs, message IDs of panels the Bot posted, and the user IDs of members who use certain features.
-- **Linked Clash of Clans accounts:** when a member links an account, the Bot stores their Discord user ID with the account's player tag and in-game name, and whether the link was verified.
+- **Linked Clash of Clans accounts:** when a member links an account, the Bot stores their Discord user ID with the account's player tag and in-game name, and whether the link was verified. An account verified with its in-game API token is copied automatically to every other server the Bot shares with that member (still marked verified), so a member who joins another clan's server does not have to link again. Members can unlink it in any server, and it is not put back there.
 - **Clan War League signups:** the accounts a member signed up, who submitted the signup, and roster assignments.
 - **Support tickets:** the ticket channel ID, the ticket creator's Discord user ID, and the ticket's status. The Bot does not store the contents of ticket conversations.
 - **Server settings:** tracked clan tags, feature toggles, custom welcome and rules text set by server leaders, configured YouTube channels, and the public X (Twitter) account handles a server leader chooses to follow, with the rule chosen for each.
@@ -39,7 +39,7 @@ Repost to Feed is a right-click command on a message. It can be used by people h
 
 ## Why the data is used
 
-Solely to provide the Bot's features to the server it was collected in: war and CWL stats, rosters, account linking, tickets, notifications, and the leader action log. Data collected in one server is not shown to another server, except that public game data about a clan or player may appear in any server that tracks the same clan.
+Solely to provide the Bot's features to the server it was collected in: war and CWL stats, rosters, account linking, tickets, notifications, and the leader action log. Data collected in one server is not shown to another server, except that a member's token-verified accounts follow them into the other servers they are in, and public game data about a clan or player may appear in any server that tracks the same clan.
 
 ## Third parties
 
