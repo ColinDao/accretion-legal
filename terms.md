@@ -4,7 +4,7 @@ title: Terms of Service
 
 # Terms of Service
 
-Last updated: October 8, 2026
+Last updated: October 9, 2026
 
 By adding the Clash of Clans Discord bot (the "Bot") to a server or using its features, you agree to these terms. If you do not agree, remove the Bot and do not use it.
 
@@ -18,7 +18,7 @@ The Bot provides clan tools for Clash of Clans communities on Discord, such as w
 - Do not use the Bot to harass, spam, or harm others, to break the law, or to try to disrupt or gain unauthorized access to the Bot or its hosting.
 - Server leaders are responsible for how the Bot is configured in their server, including any messages, rules, or welcome text they set.
 - Only link Clash of Clans accounts you own or are authorized to manage.
-- Only repost content with Repost to Feed that you have the right to share, and respect the people who made it. Do not use it, or the X account feeds, to repost someone's content in a way that harasses them or breaks Discord's or X's rules. Server leaders are responsible for what is followed and posted in their server's feeds.
+- Only repost content with Repost to Feed that you have the right to share, and respect the people who made it. Do not use it, or the X account feeds, to repost someone's content in a way that harasses them or breaks Discord's or X's rules. Server leaders are responsible for what is followed and posted in their server's feeds. Some base packs are paid and say they must not be shared. The Bot warns when it sees such a notice but does not stop you, so check before you repost a pack.
 
 ## Availability
 

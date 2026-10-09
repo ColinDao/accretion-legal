@@ -4,7 +4,7 @@ title: Privacy Policy
 
 # Privacy Policy
 
-Last updated: October 8, 2026
+Last updated: October 9, 2026
 
 This policy explains what data the Clash of Clans Discord bot (the "Bot") stores, why, and how you can have it deleted. The Bot is run by an individual hobbyist, not a company.
 
@@ -33,6 +33,7 @@ Repost to Feed is a right-click command on a message. It can be used by people h
 
 - When a member runs it, Discord sends the Bot that one message: its text, pictures, embeds, buttons and links, who posted it, and the server and channel it was in. The Bot receives nothing else from that server and does not see which servers the member is in.
 - The Bot reposts the picture, the text and the Clash of Clans base link to the Base Feed channel of a server the member leads, and credits the member who shared it. It does not store the message, and it does not post anything in, reply to, or react in the server the message came from.
+- If the message has a PDF (a base pack), the Bot downloads that file from Discord, reads the base links, pictures and text out of it while it processes it, and posts each base as its own message. It does not keep the PDF or a copy of its contents in its database. If the PDF says that sharing it is not allowed, the Bot shows the member that notice before posting, but it is the member's choice to go ahead.
 - A member can use it on messages from servers the Bot has not been added to. To do that they add the Bot to their own Discord account (a "user install"). A user install gives the Bot only the ability to respond to commands that person runs. They can remove it at any time from their Discord settings.
 - The Bot does not check whether a message's author agrees to it being reposted. The member who shares a post is responsible for having the right to share it (see the Terms).
 
