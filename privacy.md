@@ -4,7 +4,7 @@ title: Privacy Policy
 
 # Privacy Policy
 
-Last updated: October 9, 2026
+Last updated: October 13, 2026
 
 This policy explains what data the Clash of Clans Discord bot (the "Bot") stores, why, and how you can have it deleted. The Bot is run by an individual hobbyist, not a company.
 
@@ -15,7 +15,7 @@ The Bot only stores what its features need to run.
 - **Discord identifiers:** server (guild) IDs, channel IDs, role IDs, message IDs of panels the Bot posted, and the user IDs of members who use certain features.
 - **Linked Clash of Clans accounts:** when a member links an account, the Bot stores their Discord user ID with the account's player tag and in-game name, and whether the link was verified. An account verified with its in-game API token is copied automatically to every other server the Bot shares with that member (still marked verified), so a member who joins another clan's server does not have to link again. Members can unlink it in any server, and it is not put back there. A person who is a Manager of two servers can also copy the linked accounts of members who are in both from one server to the other, in one step that is recorded in the leader action log.
 - **Clan War League signups:** the accounts a member signed up, who submitted the signup, and roster assignments.
-- **Support tickets:** the ticket channel ID, the ticket creator's Discord user ID, and the ticket's status. The Bot does not store the contents of ticket conversations.
+- **Support tickets:** the ticket channel ID, the ticket creator's Discord user ID, the ticket's type and status, and when it was opened, resolved and archived. When an archived ticket's channel is deleted, the Bot also saves the conversation that took place in it (see Ticket conversations below).
 - **Server settings:** tracked clan tags, feature toggles, custom welcome and rules text set by server leaders, configured YouTube channels, and the public X (Twitter) account handles a server leader chooses to follow, with the rule chosen for each.
 - **Leader action log:** when a server leader changes a setting or takes a leader action through the Bot, the Bot records the actor's Discord user ID and display name at the time, what they did, and when. It also mirrors selected entries from the server's own Discord audit log for that server's leaders to see.
 - **Reposted feed posts:** when a member reposts something to a server's Base Feed or Social Feed (see below), or a followed X account posts, the Bot posts a copy (the text, pictures and Clash of Clans base links) as an ordinary message in that server's feed channel. The Bot does not keep its own copy in its database. The post then lives in Discord like any other message and is governed by Discord and that server's leaders.
@@ -23,9 +23,19 @@ The Bot only stores what its features need to run.
 
 ## What the Bot does not do
 
-- It does not read or store the contents of your messages. It does not request the Message Content intent, so it cannot see messages in the background. The only message it ever receives is one a member deliberately selects with the **Repost to Feed** command (see below).
+- It does not listen to or store your messages as you send them, and it does not read the channels of a server. The only messages it ever reads are (1) one a member deliberately selects with the **Repost to Feed** command (see below), and (2) the conversation inside a ticket channel the Bot itself created, at the moment that archived ticket is about to be deleted (see Ticket conversations below). The Bot uses Discord's Message Content intent only for that second purpose.
 - It does not sell, rent, or share your data with advertisers or data brokers.
 - It does not use your data for advertising or profiling.
+
+## Ticket conversations
+
+A support ticket is a private channel the Bot creates for one member and the server's leaders. When a leader marks the ticket resolved, the channel is archived 24 hours later, and then deleted after a retention period the server's leaders choose (3, 7, 14 or 30 days, 7 by default). Re-opening the ticket cancels the deletion. A reminder is posted in the channel 24 hours before it is deleted.
+
+- **What is saved:** just before the channel is deleted, the Bot reads that one channel and saves each message in it: who wrote it (their Discord user ID and display name at the time), when, and the text. For attachments it saves only their file names, not the files. It saves the newest 1,000 messages of a very long ticket. If the Bot cannot read the channel, it does not delete it.
+- **Who can see it:** only the leaders of that server, through the Bot's Setup panel (Ticket History), where they can search and download it. It is never shown to other servers or to other members.
+- **How long it is kept:** a server's leaders choose how long a saved conversation is kept after the channel is deleted: 30, 90, 180 or 365 days (90 by default), or forever, which means until a leader deletes it. After the chosen time the text is deleted. A leader can also delete the saved conversation of any ticket at any time, or all of them with Clear All Tickets. The ticket's record (who opened it, when, and its type) stays until the server's data is deleted.
+- **What to avoid:** because leaders can read tickets, do not put passwords, payment details, your Clash of Clans API token or other secrets in a ticket.
+- **Deletion:** see Retention and deletion below.
 
 ## Repost to Feed
 
@@ -39,7 +49,7 @@ Repost to Feed is a right-click command on a message. It can be used by people h
 
 ## Why the data is used
 
-Solely to provide the Bot's features to the server it was collected in: war and CWL stats, rosters, account linking, tickets, notifications, and the leader action log. Data collected in one server is not shown to another server, except that a member's token-verified accounts follow them into the other servers they are in, and public game data about a clan or player may appear in any server that tracks the same clan.
+Solely to provide the Bot's features to the server it was collected in: war and CWL stats, rosters, account linking, tickets (including the saved conversation of archived tickets), notifications, and the leader action log. Data collected in one server is not shown to another server, except that a member's token-verified accounts follow them into the other servers they are in, and public game data about a clan or player may appear in any server that tracks the same clan.
 
 ## Third parties
 
@@ -51,12 +61,12 @@ Solely to provide the Bot's features to the server it was collected in: war and 
 
 ## Retention and deletion
 
-- **Server removal:** when the Bot is removed from a server, all data stored for that server (settings, followed X accounts, links, signups, tickets, and the leader action log) is deleted automatically. Posts the Bot already made in your server's channels stay there, since they are ordinary Discord messages.
-- **Leaders** can clear a server's data at any time using the Bot's Clear Database option (public war and ranked history is not part of this, see below), and can unlink accounts.
+- **Server removal:** when the Bot is removed from a server, all data stored for that server (settings, followed X accounts, links, signups, tickets and their saved conversations, and the leader action log) is deleted automatically. Posts the Bot already made in your server's channels stay there, since they are ordinary Discord messages.
+- **Leaders** can clear a server's data at any time using the Bot's Clear Database option (public war and ranked history is not part of this, see below), and can unlink accounts. They can also delete one ticket's saved conversation, or every ticket and its saved conversation with Clear All Tickets, and change how long saved conversations are kept.
 - **Members** can unlink their own accounts through the Bot. To have any other data tied to your Discord user ID deleted, contact us using the details below and include your Discord user ID.
 - Public war and ranked history keyed by clan or player tag is kept as public game data and is not tied to a Discord server. You may request removal of history for a player tag you own.
 - Daily backups of the database are kept for 14 days and then deleted. They are stored on the hosting server, and a copy of the newest backup is also kept each day in a separate private storage location, likewise for 14 days. Data deleted from the live database leaves the backups within that window.
-- When you ask for deletion, your linked accounts, your own signups, and your tickets are deleted. Your name and ID are removed from leader action log entries. The rest of the log stays, since it belongs to the server's leaders.
+- When you ask for deletion, your linked accounts, your own signups, and your tickets (with their saved conversations) are deleted. Your name and ID, and the text of your messages, are removed from saved conversations of tickets you did not open. Your name and ID are removed from leader action log entries. The rest of the log stays, since it belongs to the server's leaders.
 
 ## Security
 
