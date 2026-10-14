@@ -4,7 +4,7 @@ title: Privacy Policy
 
 # Privacy Policy
 
-Last updated: October 13, 2026
+Last updated: October 14, 2026
 
 This policy explains what data the Clash of Clans Discord bot (the "Bot") stores, why, and how you can have it deleted. The Bot is run by an individual hobbyist, not a company.
 
@@ -17,6 +17,7 @@ The Bot only stores what its features need to run.
 - **Clan War League signups:** the accounts a member signed up, who submitted the signup, and roster assignments.
 - **Support tickets:** the ticket channel ID, the ticket creator's Discord user ID, the ticket's type and status, and when it was opened, resolved and archived. When an archived ticket's channel is deleted, the Bot also saves the conversation that took place in it (see Ticket conversations below).
 - **Server settings:** tracked clan tags, feature toggles, custom welcome and rules text set by server leaders, configured YouTube channels, and the public X (Twitter) account handles a server leader chooses to follow, with the rule chosen for each.
+- **Welcome picture:** if a server leader sets a custom picture for the welcome message, the Bot stores a shrunk copy of that picture for that server. It does not store who uploaded it (the leader action log records that a leader changed it). Leaders can remove it at any time.
 - **Leader action log:** when a server leader changes a setting or takes a leader action through the Bot, the Bot records the actor's Discord user ID and display name at the time, what they did, and when. It also mirrors selected entries from the server's own Discord audit log for that server's leaders to see.
 - **Reposted feed posts:** when a member reposts something to a server's Base Feed or Social Feed (see below), or a followed X account posts, the Bot posts a copy (the text, pictures and Clash of Clans base links) as an ordinary message in that server's feed channel. The Bot does not keep its own copy in its database. The post then lives in Discord like any other message and is governed by Discord and that server's leaders.
 - **Public game data:** war and Clan War League attack history and ranked ladder history for tracked clans and linked players, obtained from the Supercell Clash of Clans API. This is public in-game data.
@@ -61,7 +62,7 @@ Solely to provide the Bot's features to the server it was collected in: war and 
 
 ## Retention and deletion
 
-- **Server removal:** when the Bot is removed from a server, all data stored for that server (settings, followed X accounts, links, signups, tickets and their saved conversations, and the leader action log) is deleted automatically. Posts the Bot already made in your server's channels stay there, since they are ordinary Discord messages.
+- **Server removal:** when the Bot is removed from a server, all data stored for that server (settings, a custom welcome picture, followed X accounts, links, signups, tickets and their saved conversations, and the leader action log) is deleted automatically. Posts the Bot already made in your server's channels stay there, since they are ordinary Discord messages.
 - **Leaders** can clear a server's data at any time using the Bot's Clear Database option (public war and ranked history is not part of this, see below), and can unlink accounts. They can also delete one ticket's saved conversation, or every ticket and its saved conversation with Clear All Tickets, and change how long saved conversations are kept.
 - **Members** can unlink their own accounts through the Bot. To have any other data tied to your Discord user ID deleted, contact us using the details below and include your Discord user ID.
 - Public war and ranked history keyed by clan or player tag is kept as public game data and is not tied to a Discord server. You may request removal of history for a player tag you own.
