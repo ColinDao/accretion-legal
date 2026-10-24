@@ -4,7 +4,7 @@ title: Privacy Policy
 
 # Privacy Policy
 
-Last updated: October 23, 2026
+Last updated: October 24, 2026
 
 This policy explains what data the Clash of Clans Discord bot (the "Bot") stores, why, and how you can have it deleted. The Bot is run by an individual hobbyist, not a company.
 
@@ -20,6 +20,7 @@ The Bot only stores what its features need to run.
 - **Welcome picture:** if a server leader sets a custom picture for the welcome message, the Bot stores a shrunk copy of that picture for that server. It does not store who uploaded it (the leader action log records that a leader changed it). Leaders can remove it at any time.
 - **Leader action log:** when a server leader changes a setting or takes a leader action through the Bot, the Bot records the actor's Discord user ID and display name at the time, what they did, and when. It also mirrors selected entries from the server's own Discord audit log for that server's leaders to see.
 - **Reposted feed posts:** when a member reposts something to a server's Base Feed or Social Feed (see below), or a followed X account posts, the Bot posts a copy (the text, pictures and Clash of Clans base links) as an ordinary message in that server's feed channel. The Bot does not keep its own copy in its database. The post then lives in Discord like any other message and is governed by Discord and that server's leaders.
+- **Goodbye messages:** if a server leader sets a Goodbye Messages channel, then when a member leaves, is kicked or is banned the Bot posts a message there with the person's display name, avatar, roles, when they joined, when their account was created and any Clash of Clans accounts they had linked in that server. The Bot reads this from Discord at that moment and does not keep its own copy. For a kick or ban it also shows who did it and the reason, taken from the server's audit log.
 - **Public game data:** war and Clan War League attack history and ranked ladder history for tracked clans and linked players, obtained from the Supercell Clash of Clans API. This is public in-game data.
 
 ## What the Bot does not do
