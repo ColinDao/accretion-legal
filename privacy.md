@@ -4,7 +4,7 @@ title: Privacy Policy
 
 # Privacy Policy
 
-Last updated: October 14, 2026
+Last updated: October 23, 2026
 
 This policy explains what data the Clash of Clans Discord bot (the "Bot") stores, why, and how you can have it deleted. The Bot is run by an individual hobbyist, not a company.
 
@@ -24,9 +24,13 @@ The Bot only stores what its features need to run.
 
 ## What the Bot does not do
 
-- It does not listen to or store your messages as you send them, and it does not read the channels of a server. The only messages it ever reads are (1) one a member deliberately selects with the **Repost to Feed** command (see below), and (2) the conversation inside a ticket channel the Bot itself created, at the moment that archived ticket is about to be deleted (see Ticket conversations below). The Bot uses Discord's Message Content intent only for that second purpose.
+- It does not store your messages as you send them, and it does not read the channels of a server. The Bot receives a notice for each new message in a server it is in (Discord requires this for it to notice chat commands, see below), but it looks at the text only far enough to check whether the whole message is exactly one of its chat commands, such as `!resolve`. Any other message is dropped on the spot, and nothing from it is saved, logged or shared. The only messages the Bot ever reads beyond that are (1) one a member deliberately selects with the **Repost to Feed** command (see below), and (2) the conversation inside a ticket channel the Bot itself created, at the moment that archived ticket is about to be deleted (see Ticket conversations below).
 - It does not sell, rent, or share your data with advertisers or data brokers.
 - It does not use your data for advertising or profiling.
+
+## Chat commands
+
+The Bot has a few short words that a server's Moderators and Managers can type as an ordinary message, such as `!resolve` and `!reopen` inside a ticket channel. To notice them the Bot uses Discord's Message Content intent and receives new messages as they are sent. It compares each message with the list of commands, and only acts when the whole message is exactly one of them and the person who typed it holds the server's Moderator or Manager role. For anyone else, and for every other message, it does nothing and keeps nothing. A command it acts on is recorded in the server's leader action log like any other leader action (who ran it and on which ticket), not the message text.
 
 ## Ticket conversations
 
