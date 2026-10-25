@@ -4,7 +4,7 @@ title: Terms of Service
 
 # Terms of Service
 
-Last updated: October 14, 2026
+Last updated: October 24, 2026
 
 By adding the Clash of Clans Discord bot (the "Bot") to a server or using its features, you agree to these terms. If you do not agree, remove the Bot and do not use it.
 
@@ -19,6 +19,7 @@ The Bot provides clan tools for Clash of Clans communities on Discord, such as w
 - Server leaders are responsible for how the Bot is configured in their server, including any messages, rules, welcome text, or pictures they set. Only upload a picture you have the right to use.
 - Only link Clash of Clans accounts you own or are authorized to manage.
 - Tickets are private to you and the server's leaders, but the Bot saves a ticket's conversation when its archived channel is deleted, and leaders can read it (see the [Privacy Policy](privacy)). Do not put passwords, payment details, your Clash of Clans API token or other secrets in a ticket. Server leaders are responsible for how they use what is in tickets and for telling their members that tickets are saved.
+- Server leaders are responsible for what they write in the Leadership SOP and for how they use the information in goodbye messages (a member's name, picture, roles, join date and linked accounts), and for telling their members that goodbye messages are posted for leadership.
 - Only repost content with Repost to Feed that you have the right to share, and respect the people who made it. Do not use it, or the X account feeds, to repost someone's content in a way that harasses them or breaks Discord's or X's rules. Server leaders are responsible for what is followed and posted in their server's feeds. Some base packs are paid and say they must not be shared. The Bot warns when it sees such a notice but does not stop you, so check before you repost a pack.
 
 ## Availability
