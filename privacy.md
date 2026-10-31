@@ -4,7 +4,7 @@ title: Privacy Policy
 
 # Privacy Policy
 
-Last updated: October 28, 2026
+Last updated: October 31, 2026
 
 This policy explains what data the Clash of Clans Discord bot (the "Bot") stores, why, and how you can have it deleted. The Bot is run by an individual hobbyist, not a company.
 
@@ -23,7 +23,7 @@ The Bot only stores what its features need to run.
 - **Reposted feed posts:** when a member reposts something to a server's Base Feed or Social Feed (see below), or a followed X account posts, the Bot posts a copy (the text, pictures and Clash of Clans base links) as an ordinary message in that server's feed channel. The post shows a short title and the decoded Clan Castle, and the Bot saves the poster's own words, exactly as written, so the post's Original Text button can show them. That saved text is held with the message's ID and the server and channel it is in, nothing else, and is deleted when the server's data is cleared or the Bot is removed from the server. The Bot keeps no other copy of the post (pictures and links stay in Discord only). The post then lives in Discord like any other message and is governed by Discord and that server's leaders.
 - **Goodbye messages:** if a server leader sets a Goodbye Messages channel, then when a member leaves, is kicked or is banned the Bot posts a message there with the person's display name, avatar, roles, when they joined, when their account was created and any Clash of Clans accounts they had linked in that server. The Bot reads this from Discord at that moment and does not keep its own copy. For a kick or ban it also shows who did it and the reason, taken from the server's audit log.
 - **Leadership SOP:** if a server leader sets a Leadership SOP channel, the Bot posts and pins a message there holding procedures that the server's Moderators and Managers write and edit with a button. The Bot stores the text of every saved version for that server, with the display name and Discord user ID of the person who saved each one and when, so any earlier version can be looked at and restored. This is deleted when the server's data is cleared or the Bot is removed from the server.
-- **Public game data:** war and Clan War League attack history and ranked ladder history for tracked clans and linked players, obtained from the Supercell Clash of Clans API. This is public in-game data.
+- **Public game data:** war and Clan War League attack history and ranked ladder history for tracked clans and linked players, obtained from the Supercell Clash of Clans API and from ClashKing, a third-party service that stores public Clash of Clans history. This includes history from before the Bot started tracking a clan or player, and a summary picture of a player's public stats (a Tryout Card) shown to a server's leaders on that player's Clan Application. This is public in-game data.
 
 ## What the Bot does not do
 
@@ -64,6 +64,7 @@ Solely to provide the Bot's features to the server it was collected in: war and 
 
 - **Discord:** the Bot runs on Discord and is subject to Discord's own terms and privacy policy.
 - **Supercell Clash of Clans API:** the Bot sends clan and player tags to this API to retrieve public game data.
+- **ClashKing API (api.clashk.ing):** the Bot sends clan and player tags to this third-party service to retrieve public game history, such as past wars, clan changes and ranked battles. This covers tracked clans, linked players, and the accounts an applicant submits in a Clan Application. Nothing about Discord users is sent.
 - **YouTube Data API:** used only if a server leader configures a YouTube feed, to check a public channel for new videos.
 - **X (Twitter) posts through FxTwitter:** used only if a server leader follows an X account. The Bot sends that public account's handle to the third-party FxTwitter service (api.fxtwitter.com) every few minutes to read its recent public posts. No Discord user data is sent. This is an unofficial service, so it may stop working at any time.
 - **Hosting:** the Bot and its database run on a privately controlled cloud virtual machine. Data is not sent to any analytics service. Copies of the database may also be kept in a separate private storage location for maintenance and debugging, and are deleted when no longer needed.
